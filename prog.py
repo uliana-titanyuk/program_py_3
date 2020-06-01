@@ -13,11 +13,11 @@ def Sequence(filename):
              k+=1
         for s in [s5 for s1 in f for s2 in s1.split(' ') for s3 in s2.split('\n') for s4 in s3.split(',') for s5 in s4.split('\t') if s5!='']: 
             try:
-                t=int(s)-1
                 n+=1
+                t=int(s)*(n-1)
                 if n<k
                  if (n>0)
-                 print(t,"*x^",n,"+") 
+                 print(t,"*x^",n-1,"+") 
             except:
                 print('word ',s,' ignored',sep='')
        
