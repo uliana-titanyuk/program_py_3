@@ -22,8 +22,8 @@ def Sequence(filename):
                 print('word ',s,' ignored',sep='')
        
             return res
-        elif (n==s):
-            print(t,"*x^",s)
+        elif (n==k):
+            print(t,"*x^",k-1)
         elif (n==0):
             return 0
         f.close()
